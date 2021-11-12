@@ -1,0 +1,42 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.9'
+}
+
+sourceSets {
+    build {
+        java.srcDir file('src/main/java')
+    }
+}
+
+task myJavadocs(type: Javadoc) {
+    source = sourceSets.main.allSource
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies
+        {
+            compileOnly 'org.projectlombok:lombok:1.18.20'
+            annotationProcessor 'org.projectlombok:lombok:1.18.20'
+            implementation 'mysql:mysql-connector-java:8.0.15'
+            implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.0.1'
+            implementation group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-xml', version: '2.12.3'
+            implementation group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-csv', version: '2.12.3'
+        }
+
+group 'org.alexCompany'
+version '1.0-SNAPSHOT'
+
+javafx {
+    version = "15.0.1"
+    modules = ['javafx.controls', 'javafx.fxml']
+}
+
+mainClassName = 'Main'
+
+
+

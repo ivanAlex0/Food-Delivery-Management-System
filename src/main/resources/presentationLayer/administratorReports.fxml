@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationLayer.AdministratorReports">
+   <children>
+      <TextField fx:id="startHourField" layoutX="14.0" layoutY="32.0" prefHeight="26.0" prefWidth="49.0" />
+      <TextField fx:id="endHourField" layoutX="82.0" layoutY="32.0" prefHeight="26.0" prefWidth="49.0" />
+      <Button layoutX="156.0" layoutY="32.0" mnemonicParsing="false" onAction="#timeReport" text="TimeReport" />
+      <Button layoutX="156.0" layoutY="85.0" mnemonicParsing="false" onAction="#numberOfOrdersReport" text="CountReport" />
+      <TextField fx:id="numberOfOrders" layoutX="57.0" layoutY="84.0" prefHeight="26.0" prefWidth="49.0" />
+      <TextField fx:id="orderNumber" layoutX="19.0" layoutY="156.0" prefHeight="26.0" prefWidth="49.0" />
+      <TextField fx:id="priceValue" layoutX="87.0" layoutY="156.0" prefHeight="26.0" prefWidth="49.0" />
+      <Button layoutX="161.0" layoutY="156.0" mnemonicParsing="false" onAction="#numberOfOrdersByClient" text="ClientsReport" />
+      <Button layoutX="161.0" layoutY="201.0" mnemonicParsing="false" onAction="#ordersWithinADayWithCounting" text="ProductsOnDayReport" />
+      <TextField fx:id="count" layoutX="87.0" layoutY="200.0" prefHeight="26.0" prefWidth="49.0" />
+      <TextField fx:id="day" layoutX="19.0" layoutY="200.0" prefHeight="26.0" prefWidth="49.0" />
+      <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="start H" />
+      <Text layoutX="82.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="end H" />
+      <Text layoutX="36.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="number of orders" />
+      <Text layoutX="7.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="number of Orders" wrappingWidth="62.60546875" />
+      <Text layoutX="97.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="value" wrappingWidth="62.60546875" />
+      <Text layoutX="5.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="day ex: 05-25" wrappingWidth="77.59999999999991" />
+      <Text layoutX="75.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="nb of orders" wrappingWidth="77.59999999999991" />
+      <ListView fx:id="listView" layoutX="296.0" layoutY="11.0" prefHeight="378.0" prefWidth="296.0" />
+   </children>
+</AnchorPane>

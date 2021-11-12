@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1530.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationLayer.Administrator">
+   <children>
+      <Button layoutX="101.0" layoutY="33.0" mnemonicParsing="false" onAction="#importProducts" prefHeight="32.0" prefWidth="248.0" style="-fx-background-radius: 00;" text="Import Products from .csv" />
+      <Line endX="300.0" endY="-1.52587890625E-5" layoutX="299.0" layoutY="114.0" startX="-300.0" startY="-1.52587890625E-5" />
+      <TextField fx:id="title" alignment="CENTER" layoutX="75.0" layoutY="172.0" prefHeight="26.0" prefWidth="448.0" text="Title" />
+      <TextField fx:id="ratingField" alignment="CENTER" layoutX="118.0" layoutY="249.0" text="Rating" />
+      <TextField fx:id="caloriesField" alignment="CENTER" layoutX="331.0" layoutY="249.0" text="Calories" />
+      <TextField fx:id="proteinField" alignment="CENTER" layoutX="9.0" layoutY="305.0" text="Protein" />
+      <TextField fx:id="fatField" alignment="CENTER" layoutX="220.0" layoutY="305.0" text="Fats" />
+      <TextField fx:id="sodiumField" alignment="CENTER" layoutX="433.0" layoutY="305.0" text="Sodium" />
+      <TextField fx:id="priceField" alignment="CENTER" layoutX="225.0" layoutY="381.0" text="Price" />
+      <Button layoutX="244.0" layoutY="439.0" mnemonicParsing="false" onAction="#addModifyProduct" prefHeight="26.0" prefWidth="102.0" style="-fx-background-radius: -0;" text="Add/Modify" />
+      <Line endX="300.0" endY="-1.52587890625E-5" layoutX="299.0" layoutY="587.0" startX="-300.0" startY="-1.52587890625E-5" />
+      <Button layoutX="405.0" layoutY="618.0" mnemonicParsing="false" onAction="#deleteProduct" prefHeight="26.0" prefWidth="102.0" style="-fx-background-radius: 0;" text="Delete" />
+      <Line endX="51.70001220703125" endY="157.0" layoutX="243.0" layoutY="643.0" startX="51.70001220703125" startY="-55.500030517578125" />
+      <Button layoutX="107.0" layoutY="651.0" mnemonicParsing="false" onAction="#goToComposite" prefHeight="26.0" prefWidth="102.0" style="-fx-background-radius: 0;" text="Create" />
+      <Text layoutX="99.0" layoutY="628.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create Custom Product" textAlignment="CENTER" wrappingWidth="119.1597900390625" />
+      <Button layoutX="477.0" layoutY="78.0" mnemonicParsing="false" onAction="#writeProducts" prefHeight="26.0" prefWidth="102.0" style="-fx-background-radius: 00;" text="Write" />
+      <ListView fx:id="productListView" layoutX="604.0" onMouseClicked="#setBaseProduct" prefHeight="800.0" prefWidth="891.0" />
+      <Button layoutX="405.0" layoutY="664.0" mnemonicParsing="false" onAction="#goToReports" prefHeight="26.0" prefWidth="102.0" style="-fx-background-radius: 0;" text="Reports" />
+      <Text layoutX="288.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title" />
+      <Text layoutX="175.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rating" />
+      <Text layoutX="388.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Calories" />
+      <Text layoutX="62.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Protein" />
+      <Text layoutX="287.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fat" />
+      <Text layoutX="487.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sodium" />
+      <Text layoutX="286.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" />
+   </children>
+</AnchorPane>
